@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .text-description{
+    @apply text-sm text-slate-500
+  }
+  .btn-primary{
+    @apply flex justify-center items-center rounded bg-white shadow hover:shadow-md transition-all p-2
+  }
+  .btn-disabled{
+    @apply bg-slate-100 shadow hover:shadow
+  }
+  .btn-checked{
+    @apply bg-purple-100
+  }
+}
+
+svg{
+  fill: black;
+}
+
+.outer-container{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.main-grid{
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100vh;
+}
+
+.inner-container{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  max-width: 1200px;
+}
+.header-gradient{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(99.07deg, rgba(193, 67, 150, 0.8) 0%, rgba(62, 127, 252, 0.8) 99.43%);
+}

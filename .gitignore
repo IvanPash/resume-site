@@ -1,0 +1,11 @@
+node_modules
+*.log*
+.nuxt
+.idea
+.nitro
+.cache
+.vscode
+.output
+.env
+.buildt
+dist
